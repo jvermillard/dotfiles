@@ -49,6 +49,10 @@ set showmatch
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+" Ctrl+c copy, Ctrl+x cut
+vmap <c-c> y
+vmap <c-x> d
+
 " Map <c-s> to write current buffer.
 map <c-s> :w<cr>
 imap <c-s> <c-o><c-s>
@@ -56,12 +60,13 @@ imap <c-s> <esc><c-s>
 
 
 " Buffer naviation
-map <M-Left> :bprevious<CR>
-map <M-Right> :bnext<CR>
+map <c-Left> :tabprevious<CR>
+map <c-Right> :tabnext<CR>
 
 " Select all.
 map <c-a> ggVG
 
 " Undo in insert mode.
-imap <c-z> <c-o>u
-imap <c-r> <c-o><c-r>
+imap <c-z> <c-o>
+imap <c-r> <c-o><c-r>u
+
