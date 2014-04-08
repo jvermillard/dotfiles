@@ -19,6 +19,7 @@ Plugin 'bling/vim-airline'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
+Plugin 'valloric/YouCompleteMe'
 
 let mapleader=","
 syntax on
